@@ -1,0 +1,15 @@
+@media screen and (max-width: 800px){
+    nav{
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 17vh;
+    }
+    .desktop-nav{
+        display: none;
+    }
+    .hamburger-nav{
+        display: flex;
+    }
+    
+}

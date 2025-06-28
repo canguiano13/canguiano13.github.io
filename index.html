@@ -2,41 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>C. Anguiano - Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <!--DM Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+    <title>C. Anguiano</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
 </head>
 
 <body>
-    <!--sidebar with relevan links, picture-->
-    <nav>
-        <h1>Carlos Anguiano</h1>
-        <h2>Relevant work and more about me.</h2>
-        <!--TODO add border, resize images-->
-        <img src="images/headshot.JPG" height="200px" width="250px"/>
-        <h3> B.S., Computer Science @ SDSU</h3>
-        <h3> M.S., Computer Science @ UC Davis (in progress)</h3>
-        <!--TODO add small icons-->
-        <h6>Sacramento, CA</h6>
-        <h6>LinkedIn</h6>
-        <h6>Github</h6>
-        <h6>Personal Website</h6>
+    <!--navbar for desktop screens-->
+    <nav class="desktop-nav">
+        <div class="nav-header">Carlos Anguiano<div>
+            <ul class="nav-links">
+                <li><a href="">Sacramento, CA</a></li>
+                <li><a href="assets/diploma.pdf">B.S., SDSU, Summa Cum Laude</a></li>
+                <li><a href="">M.S., UCD (in progress)</a></li>
+                <li><a href="https://github.com/canguiano13">Github</a></li>
+                <li><a href="https://linkedin.com/in/canguiano13">LinkedIn</a></li>
+                <li><a href="https://canguiano.com">Personal Website</a></li>
+            </ul>
+        </div>    
     </nav>
-
-    <!--about me-->
-    <main>
-        <!--resume container-->
-        <div>
+    <!--navbar for smaller screen widths-->
+    <nav class="hamburger-nav">
+        <div class="nav-header">Carlos Anguiano</div>
+        <div class="hamburger-menu">
+            <!--hamburger menu icon with 3 lines, changes when clicked-->
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
         </div>
-
-        <!-- about me-->
-        <div>
-
+        <div class="menu-links">
+            <li><a href="">Sacramento, CA</a></li>
+            <li><a href="assets/diploma.pdf" onclick="toggleMenu()">B.S., SDSU, Summa Cum Laude</a></li>
+            <li><a href="index.html">M.S., UCD (in progress)</a></li>
+            <li><a href="https://github.com/canguiano13" onclick="toggleMenu()">Github</a></li>
+            <li><a href="https://linkedin.com/in/canguiano13" onclick="toggleMenu()">LinkedIn</a></li>
+            <li><a href="https://canguiano.com" onclick="toggleMenu()">Personal Website</a></li>
         </div>
-    </main>
+        </div>
+    </nav>
+    <!--render js-->
+    <script src="script/script.js"></script>
+</body>
 
-    <!--copyright info, advertise personal website, sitemap from https://clustrmaps.com/add-->
-    <footer>
-
-    </footer>
 </body>
 </html>
