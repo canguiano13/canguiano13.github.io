@@ -26,7 +26,7 @@ a, .btn{
     transition: all 300ms ease;
 }
 
-/* DESKTOP NAV */
+/* DESKTOP NAVBAR */
 nav{
     display: flex;
     align-items: center;
@@ -58,40 +58,35 @@ nav{
     font-size: 1.25rem;
 }
 .nav-links-list{
-    display: inline-block;
-    margin-top: 1rem;
     list-style: none;
     font-size: 1.5rem;
 }
-.nav-links-list a{
+/* LINKS ON NAVBAR */
+.nav-link{
+    margin: 1rem;
+}
+.nav-link a{
+    display: flex;
     text-decoration: none;
     text-decoration-color: white;
     color: black;
 }
-.nav-links-list a:hover{
+.nav-link a:hover{
     text-decoration: underline;
     text-decoration-color: rgb(101, 101, 101);
     text-underline-offset: .25rem;
     color: grey;
 }
-.link-container{
-    display: flex;
-    margin: .5rem 0;
-    justify-content: left;
-    align-items: center;
-}
 #in-progress-warning{
-    margin: auto 0.25rem;
+    margin: 0.3rem;
     align-self: end;
     color: black;
     font-size: .8rem;
     font-weight: 700;
 }
-
-/*ICONS*/
 .icon{
     display: flex;
-    margin-right: 1rem;
+    margin-right: .75rem;
     height: 1.5rem;
 }
 
