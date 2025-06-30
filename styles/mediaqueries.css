@@ -1,15 +1,43 @@
-@media screen and (max-width: 1050px){
-    nav{
-        justify-content: space-around;
-        align-items: center;
-        width: 100vw;
-        height: 17vh;
-    }
-    .desktop-nav{
-        display: none;
-    }
-    .hamburger-nav{
-        display: flex;
-    }
+@media screen and (max-width: 900px){
+    /* wrap main content under nav */
+    body{ flex-direction: column; }
     
+    /* remove the desktop nav */
+    .desktop-nav{ display: none; }
+
+    /* display the mobile nav */
+    .dropdown-nav{ display: flex; }
+
+    /* make the main content span the full width */
+    .main-content{
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 2rem;
+    }
+}
+
+/* smaller tablets */
+@media screen and (max-width: 640px){
+    /* reduce font sizes for some headers */
+    .dropdown-header-container{
+        font-size: 1.25rem;
+    }
+    .main-header{
+        text-align:center;
+    }
+}
+
+/* phone screens */
+@media screen and (max-width: 400px){
+    /* reduce the size of the header */
+    .dropdown-header-container{
+        width: fit-content;
+        font-size: 1rem;
+    }
+    /* reduce font size for main content header */
+    .main-header{
+        text-align: center;
+        font-size: .75rem;
+    }
 }
