@@ -18,7 +18,7 @@ body{
     overflow: hidden;
 }
 p{
-    color: #333333;
+    color: #121212;
 }
 
 /* TRANSITION */
@@ -141,7 +141,7 @@ nav{
     position: relative;
     margin-left: max(350px, 25vw);
     height: 100vh;
-    padding: 4rem;
+    padding: 3rem 4rem;
     overflow-y: scroll;
 }
 .main-header-link, .main-header-link:visited{
@@ -167,21 +167,32 @@ nav{
 }
 
 /* SECTIONS */
-.main-header, .main-section{
-    margin-bottom: 20px;
-}
-.main-header h1, .main-section h1{
-    margin-bottom: 5px;
-    font-size: 1.75rem;
+.main-header{
+    margin-bottom: 40px;
 }
 .main-header p{
     margin-bottom: 2px;
     margin-left: 2vw;
     font-weight: 600;
 }
+.main-section{
+    margin: 40px 0
+}
+.main-section-header{
+    margin: 0;
+    font-size: 1.75rem;
+}
+.main-section-subheader{
+    margin: 5px 0;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
 .main-section p{
     text-indent: 2vw;
     font-weight: 500;
+    line-height: 1.5; 
+    margin-bottom: 25px;   
 }
 
 
