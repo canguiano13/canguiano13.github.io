@@ -104,7 +104,7 @@ nav{
    overflow: hidden;
 }
 .dropdown-header{
-    margin-right: 1rem;
+    margin-left: 2rem;
     padding: 2rem;
     white-space: nowrap;
     font-size: 1.5rem;
@@ -167,6 +167,22 @@ nav{
 }
 
 /* SECTIONS */
+.main-header, .main-section{
+    margin-bottom: 20px;
+}
+.main-header h1, .main-section h1{
+    margin-bottom: 5px;
+    font-size: 1.75rem;
+}
+.main-header p{
+    margin-bottom: 2px;
+    margin-left: 2vw;
+}
+.main-section p{
+    text-indent: 2vw;
+}
+
+
 
 /* PROFILE SECTION */
 
