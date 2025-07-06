@@ -18,7 +18,7 @@ body{
     overflow: hidden;
 }
 p{
-    color: rgb(85, 85, 85)
+    color: #333333;
 }
 
 /* TRANSITION */
@@ -181,13 +181,11 @@ nav{
 }
 .main-section p{
     text-indent: 2vw;
+    font-weight: 500;
 }
 
 
-
 /* PROFILE SECTION */
-
-
 
 
 
