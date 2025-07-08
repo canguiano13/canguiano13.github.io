@@ -170,6 +170,9 @@ nav{
 .main-header{
     margin-bottom: 40px;
 }
+.main-header h1{
+    margin-bottom: 5px;
+}
 .main-header p{
     margin-bottom: 2px;
     margin-left: 2vw;
@@ -191,7 +194,7 @@ nav{
 .main-section p{
     text-indent: 2vw;
     font-weight: 500;
-    line-height: 1.5; 
+    line-height: 1.75; 
     margin-bottom: 25px;   
 }
 
