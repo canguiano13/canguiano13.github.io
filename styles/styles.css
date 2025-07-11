@@ -182,12 +182,12 @@ nav{
     margin: 40px 0
 }
 .main-section-header{
-    margin: 0;
+    margin: 5;
     font-size: 1.75rem;
 }
 .main-section-subheader{
     margin: 5px 0;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     text-align: center;
     font-weight: bold;
 }
@@ -195,9 +195,17 @@ nav{
     text-indent: 2vw;
     font-weight: 500;
     line-height: 1.75; 
-    margin-bottom: 25px;   
+    margin-bottom: 20px;   
 }
-
+.main-section ol{
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-weight: 500;
+    line-height: 1.75;
+}
+.main-section li{
+    padding-left: 10px;
+}
 
 /* PROFILE SECTION */
 

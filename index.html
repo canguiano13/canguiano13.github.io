@@ -144,7 +144,8 @@
             <p>
                 My interest in computer science first started in junior high, when I enrolled for a game development class.
                 We started with a brief introduction to C++, but soon switched to using a game engine. 
-                I was fascinated by the power of code and the creativity it enabled, which ultimately inspired me to study CS
+                I was fascinated by the power of code and the creativity it enabled, which ultimately inspired me to study CS. 
+                That remains one of my favorite classes of all time.
                 <br><br>
                 From 2021-2025, <strong>I completed my undergraduate degree at San Diego State University.</strong>
                 At SDSU, I studied a wide range of topics, including <strong>Algorithms & Data Structures, Computer Networks, Computer Security,
@@ -174,14 +175,14 @@
             <h4 class="main-section-subheader">SAASS Tutoring</h4>
             <p>
                 At the start of my second year at SDSU, I began working part-time as a tutor for SDSU's Student-Athlete Academic Support Services (SAASS) team.
-                Here, I gained valuable practice teaching fundamental computer science concepts, and <strong>identified a passion for teaching computer science.</strong>
+                Here, I gained valuable <strong>practice teaching fundamental computer science concepts</strong>, and <strong>identified an interest in computer science education.</strong>
                 As a part of this team, I <strong>scheduled and led one-on-one tutoring sessions, prepared lesson materials in advance, and created relevant visualizations.</strong>
                 This role also helped me to develop my own understanding of fundamental computer science topics, and inspired me to further study computer science education.
             </p>
             <h4 class="main-section-subheader">The IT User Services Help Desk</h4>
             <p>
-                Also in Fall 2022, I began working as a student analyst for SDSU's IT Division, and was <strong>later promoted to a
-                 lead student analyst</strong> in the summer of 2024 on account of performance.
+                Also in Fall 2022, I began working as a student analyst for SDSU's IT Division, and was later promoted to a
+                 lead student analyst in the summer of 2024 on account of performance.
                 As a part of IT User Services, my team provided frontline support for the more than 75,000+ active students, staff, and faculty.
                 Our team provided support for technical issues related to Google Workspace, Microsoft Office 365,
                  Duo Mobile, Adobe Sign/Creative Cloud and more through the ServiceNow Platform. 
@@ -191,42 +192,83 @@
             </p>
             <h4 class="main-section-subheader">Research at the AI4Business Lab</h4>
             <p>
-                In the fall of 2023, I joined a research team at SDSU's AI4Business Lab, where we examined the existing landscape of Large Language Models
-                and further investigated their capabilities in business-related contexts. 
+                In the fall of 2023, I joined a research team at SDSU's AI4Business Lab, where we examined the existing landscape of Large Language Models (LLMs)
+                 and further investigated their capabilities in business-related contexts.
+                My team placed specific focus on document categorization, analyzing how LLMs perform at tasks such as topic extraction and document clustering.
                 As part of my responsibilies, <strong>I collaborated on the development of several Python scripts aimed at solving NLP-related tasks.</strong>
                 These tasks included <strong>tokenization, text sanitization, n-gram frequency analysis.</strong>
                 One of the things that I quite enjoyed about working on these scripts was that it also gave me some <strong>additional practice
                  with remote development</strong>, as the high computational power required for AI training necessitated the use of
-                a private cloud environment for development and exection.
+                a private cloud environment for development and testing.
             </p>
         </section>
         
         <section class="main-section personal-projects">
             <h1>Personal Projects</h1>
-            <p style="margin: 15px 0; text-align: center;">
+            <p style="margin: 10px 0; text-align: center;">
                 A complete list of my projects can be found on <a class="main-header-link" href="https://canguiano.com/projects">my website</a>. <!--TODO add link to projects page on website-->
             </p>
-
+            <!--RollCall-->
             <h4 class="main-section-subheader">RollCall: A Cloud-based Virtual Guestbook App.</h4>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Harum illum quod eius magni maiores laborum amet eveniet nobis, doloribus,
-                omnis nulla ea voluptatibus odio, reprehenderit nostrum minima ipsum temporibus cumque.
+                One of my favorite personal projects that I've worked on is <strong>RollCall</strong>, a full-stack, cloud-based web application 
+                 that allows users to create, manage, and share digital guestbooks for events. 
+                The idea was to allow guests to sign these digital guestbooks, giving hosts the opportunity to build hype before an event 
+                 and preserve a digital momento after it ended.
+                <strong>The key features we aimed to implement were:</strong>
             </p>
+            <ol>
+                <li>Support for CRUD (Create, Read, Update, Delete) operations on digital guestbooks.</li>
+                <li>Implementation of a robust user-authentication mechanism to ensure guestbooks are secure.</li>
+                <li>Message moderation capabilities for guestbook hosts which are not visible to guests.</li>
+            </ol>
+            <p style="text-indent: 0;">
+                I contributed to this project at many stages throughout the project lifecycle from system design to deployment.
+                During the design phase, I helped draft the user-flow diagram and overall system architecture diagram.
+                I also led discussions regarding our tech stack, which ultimately consisted of 
+                 <strong>Python (Flask), HTML/CSS/JavaScript, SQL, Git/GitHub, Docker, Bash</strong>, and <strong>Google Cloud Run</strong>.
+                <br><br>
+                Later, I <strong>implemented the SQL schema</strong>, deploying it to a Google Cloud SQL instance, and configuring access via a service account using Google Cloud IAM. 
+                To support serverless deployment, I created a <strong>Dockerfile</strong> for containerization, and contributed to a
+                 <strong>Bash deployment script</strong> using the Google Cloud CLI to push the container image and launch the service on <strong>Cloud Run</strong>.
+                <br><br>
+                With our database configured, I then developed <strong>Flask-SQLAlchemy ORM models</strong> to simplify database interactions, 
+                 and contributed to the <strong>frontend templates</strong> using <strong>Jinja2</strong> for dynamic content rendering. 
 
+                I was also primarily responsible for implementing core features such as <strong>user authentication</strong> and <strong>message moderation</strong>.
+            </p>
+            
+            <!--F4E-->
             <h4 class="main-section-subheader">F4E: A Custom Discord Bot.</h4>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Harum illum quod eius magni maiores laborum amet eveniet nobis, doloribus,
-                omnis nulla ea voluptatibus odio, reprehenderit nostrum minima ipsum temporibus cumque.
+                Another personal project I enjoyed working on was <strong>F4E, a custom Discord bot</strong> built for a personal server with friends.  
+                This bot was programmed in <strong>Python</strong>, and version controlled with <strong>Git.</strong>
+                The key purpose of this bot was to respond to user text commands with jokes, riddles, trivia, etc., while also being capable of
+                 <strong>dynamically generating visual content such as custom memes.</strong>
+                <br><br>
+                To achieve this, I integrated multiple external APIs. 
+                One of my favorite commands leveraged the Art Institute of Chicago's API, allowing the bot to implement an "art exhibit of the day."  
+                I also regularly <strong>consulted the official documentation</strong> for the Discord API to handle things such as asynchronous message processing and user permissions correctly.
+                <br><br>
+                This project gave me hands-on experience with <strong>real-time API integration and asynchronous programming.</strong>
+                There was also some <strong>text sanitization</strong> required to properly handle some commands, such as custom meme generation.
             </p>
-                
+            <!--F4E-->
             <h4 class="main-section-subheader">VICE: A Chess Engine.</h4>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Harum illum quod eius magni maiores laborum amet eveniet nobis, doloribus,
-                omnis nulla ea voluptatibus odio, reprehenderit nostrum minima ipsum temporibus cumque.
+                My first large-scale personal project was a chess engine made entirely in C. I've been playing chess for a few years, and at the time 
+                I began working on this project, the creation of a chess engine seemed like the perfect blend of interests.
+                <br><br>
+                I followed and implemented the <strong>VICE Chess Engine</strong> project based on Bluefever software’s video series. 
+                Written in <strong>C</strong>, this project introduced me to core concepts common to other board game engines and decision-based systems 
+                 such as <strong>move generation, minimax search, and alpha-beta pruning</strong>. 
+                I later experimented with <strong>tuning evaluation scores </strong> and implementing an opening book to improve the engine's strength and search performance.
+                <br><br>
+                This project <strong>strengthed my understanding of low-level programming</strong>, as I had more practice with concepts such as memory management. 
+                It also gave me more practice with <strong>bit manipulation</strong>, since the use of a bitboard encoded the entire game board onto a single integer.
+                To streamline the build process, I also configured a <strong>Makefile</strong>, enabling consistent compilation.
             </p>
+
         </section>
     </main>
 
