@@ -123,35 +123,25 @@
             <p>Want to reach out? Use my <a class="main-header-link" href="contact.html">contact form!</a></p>
             <p>Interested in seeing more? Visit my <a class="main-header-link" href="https://canguiano.com">website</a>.</p>
             <p>TLDR? See: <a class="main-header-link" href="./assets/resume.pdf">resume</a>.</p>
-            <!--TODO fit button into page layout or remove
-            <div class="btn-container">
-                <button class="btn btn-color-1" onclick="window.open('./assets/resume.pdf')">View Resume</button>
-            </div>
-            -->
-            <!--TODO fit button into page layout or remove
-            <div class="btn-container">
-                <button class="btn btn-color-1" onclick="window.open('mailto:carlosanguiano137@gmail.com')">Contact Me</button>
-            </div>
-            -->
         </div>
 
-        <section class="main-section about-me">
-            <h1 class="main-section-header">About Me</h1>
-            <!--
-            <h4 class="main-section-subheader">I took my first programming class in junior high. Ever since I've been hooked.</h4>
-             -->
-            <h4 class="main-section-subheader">Education and Interests</h4>
+        <section id="about-me" class="main-section">
+            <div class="section-header">
+                <h1>About Me</h1>
+                <button title="Collapse section" class="collapsible-button" onclick="toggleCollapsible(this, 'about-me')">&mdash;</button>
+            </div>
+            <h4 class="section-subheader">Education and Interests</h4>
             <p>
                 My interest in computer science first started in junior high, when I enrolled for a game development class.
                 We started with a brief introduction to C++, but soon switched to using a game engine. 
                 I was fascinated by the power of code and the creativity it enabled, which ultimately inspired me to study CS. 
-                That remains one of my favorite classes of all time.
+                This remains one of my favorite classes of all time.
                 <br><br>
                 From 2021-2025, <strong>I completed my undergraduate degree at San Diego State University.</strong>
                 At SDSU, I studied a wide range of topics, including <strong>Algorithms & Data Structures, Computer Networks, Computer Security,
                  Cloud Computing, UNIX System Administation, Database Theory and Implementation, Machine Learning, and Data Science</strong>, among others.
                 During my undergraduate program, I placed a strong emphasis on my academic performance. 
-                While consistently working 20 hours a week and leading a student organization at SDSU, I maintained a <strong>3.93 GPA</strong> in major-related courses.
+                While consistently working 20 hours a week and leading a student organization at SDSU, I <strong>maintained a 3.93 GPA</strong> in major-related courses.
                 In May of 2025, I obtained my Bachelor's of Science, graduating <strong><i>Summa Cum Laude.</i></strong>
                 I was also identified as one of the <strong>2025 Outstanding Computer Science Undergraduate Student</strong> by the department.
                 <br><br>
@@ -161,36 +151,39 @@
                 
             </p>
 
-            <h4 class="main-section-subheader">Skills</h4>
+            <h4 class="section-subheader">Skills</h4>
             <p>
-                I'm most proficient in <strong>Python, Java, and C/C++</strong>, and am experienced with version control using <strong>Git and Github</strong>.
+                I'm most <strong>proficient in Python, Java, and C/C++</strong>, and am experienced with version control using <strong>Git and Github</strong>.
                 I have a good working knowledge of <strong>HTML, CSS, JavaScript, MySQL, and Bash</strong>.
                 I'm also familiar with containerization tools like <strong>Docker</strong>, and am generally quite comfortable in a <strong>UNIX environment.</strong>
                 Moreover, I've worked with <strong>Google Cloud Platform</strong> tools such as Google Cloud Run, IAM, and Cloud SQL.
             </p>
         </section>
 
-        <section class="main-section work-experience">
-            <h1>Work Experience</h1>
-            <h4 class="main-section-subheader">SAASS Tutoring</h4>
+        <section id="work-experience" class="main-section">
+            <div class="section-header">
+                <h1>Work Experience</h1>
+                <button title="Collapse section" class="collapsible-button" onclick="toggleCollapsible(this, 'work-experience')">&mdash;</button>
+            </div>
+            <h4 class="section-subheader">SAASS Tutoring</h4>
             <p>
                 At the start of my second year at SDSU, I began working part-time as a tutor for SDSU's Student-Athlete Academic Support Services (SAASS) team.
                 Here, I gained valuable <strong>practice teaching fundamental computer science concepts</strong>, and <strong>identified an interest in computer science education.</strong>
                 As a part of this team, I <strong>scheduled and led one-on-one tutoring sessions, prepared lesson materials in advance, and created relevant visualizations.</strong>
                 This role also helped me to develop my own understanding of fundamental computer science topics, and inspired me to further study computer science education.
             </p>
-            <h4 class="main-section-subheader">The IT User Services Help Desk</h4>
+            <h4 class="section-subheader">The IT User Services Help Desk</h4>
             <p>
                 Also in Fall 2022, I began working as a student analyst for SDSU's IT Division, and was later promoted to a
                  lead student analyst in the summer of 2024 on account of performance.
-                As a part of IT User Services, my team provided frontline support for the more than 75,000+ active students, staff, and faculty.
-                Our team provided support for technical issues related to Google Workspace, Microsoft Office 365,
+                As a part of IT User Services, I <strong>provided frontline support for the more than 75,000+ active students, staff, and faculty.</strong>
+                Our team supported technical issues related to Google Workspace, Microsoft Office 365,
                  Duo Mobile, Adobe Sign/Creative Cloud and more through the ServiceNow Platform. 
                 During my time in this role, <strong>I resolved 4,000+ support requests comprising more than 15% of all resquests routed to the IT division.</strong>
                 Beyond just technical support however, this role provided me with <strong>valuable insight into broader IT responsibilities including
                  infrastructure management, SaaS platform administration and integration, and cross-directory account synchronization.</strong>
             </p>
-            <h4 class="main-section-subheader">Research at the AI4Business Lab</h4>
+            <h4 class="section-subheader">Research at the AI4Business Lab</h4>
             <p>
                 In the fall of 2023, I joined a research team at SDSU's AI4Business Lab, where we examined the existing landscape of Large Language Models (LLMs)
                  and further investigated their capabilities in business-related contexts.
@@ -203,19 +196,21 @@
             </p>
         </section>
         
-        <section class="main-section personal-projects">
-            <h1>Personal Projects</h1>
-            <p style="margin: 10px 0; text-align: center;">
-                A complete list of my projects can be found on <a class="main-header-link" href="https://canguiano.com/projects">my website</a>. <!--TODO add link to projects page on website-->
-            </p>
+        <section id="personal-projects" class="main-section">
+            <div class="section-header">
+                <h1>Personal Projects</h1>
+                <button title="Collapse section" class="collapsible-button" onclick="toggleCollapsible(this, 'personal-projects')">&mdash;</button>
+            </div>
+            <p id="personal-projects-warning">A complete list of my projects can be found on <a class="main-header-link" href="https://canguiano.com/projects">my website</a>.</p>
+
             <!--RollCall-->
-            <h4 class="main-section-subheader">RollCall: A Cloud-based Virtual Guestbook App.</h4>
+            <h4 class="section-subheader">RollCall: A Cloud-based Virtual Guestbook App.</h4>
             <p>
-                One of my favorite personal projects that I've worked on is <strong>RollCall</strong>, a full-stack, cloud-based web application 
+                One of my favorite personal projects that I've worked on is RollCall, a full-stack, cloud-based web app 
                  that allows users to create, manage, and share digital guestbooks for events. 
                 The idea was to allow guests to sign these digital guestbooks, giving hosts the opportunity to build hype before an event 
                  and preserve a digital momento after it ended.
-                <strong>The key features we aimed to implement were:</strong>
+                The key features we aimed to implement were:
             </p>
             <ol>
                 <li>Support for CRUD (Create, Read, Update, Delete) operations on digital guestbooks.</li>
@@ -224,49 +219,50 @@
             </ol>
             <p style="text-indent: 0;">
                 I contributed to this project at many stages throughout the project lifecycle from system design to deployment.
-                During the design phase, I helped draft the user-flow diagram and overall system architecture diagram.
-                I also led discussions regarding our tech stack, which ultimately consisted of 
-                 <strong>Python (Flask), HTML/CSS/JavaScript, SQL, Git/GitHub, Docker, Bash</strong>, and <strong>Google Cloud Run</strong>.
+                During the design phase, I <strong>helped draft the user-flow diagram and overall system architecture diagram.</strong>
+                I also <strong>led discussions regarding our tech stack</strong>, which ultimately consisted of 
+                 Python (Flask), HTML/CSS/JavaScript, SQL, Git/GitHub, Docker, Bash, and Google Cloud Run.
                 <br><br>
-                Later, I <strong>implemented the SQL schema</strong>, deploying it to a Google Cloud SQL instance, and configuring access via a service account using Google Cloud IAM. 
-                To support serverless deployment, I created a <strong>Dockerfile</strong> for containerization, and contributed to a
+                Later, I <strong>implemented the SQL schema, deploying it to a Google Cloud SQL instance</strong>, and configuring access via a service account using Google Cloud IAM. 
+                To support serverless deployment, I <strong>created a Dockerfile for containerization</strong>, and contributed to a
                  <strong>Bash deployment script</strong> using the Google Cloud CLI to push the container image and launch the service on <strong>Cloud Run</strong>.
                 <br><br>
                 With our database configured, I then developed <strong>Flask-SQLAlchemy ORM models</strong> to simplify database interactions, 
-                 and contributed to the <strong>frontend templates</strong> using <strong>Jinja2</strong> for dynamic content rendering. 
+                 and <strong>contributed to the frontend Jinja2 templates</strong> for dynamic content rendering. 
 
-                I was also primarily responsible for implementing core features such as <strong>user authentication</strong> and <strong>message moderation</strong>.
+                I was also primarily responsible for implementing core features such as <strong>user authentication and message moderation</strong>.
             </p>
             
             <!--F4E-->
-            <h4 class="main-section-subheader">F4E: A Custom Discord Bot.</h4>
+            <h4 class="section-subheader">F4E: A Custom Discord Bot.</h4>
             <p>
-                Another personal project I enjoyed working on was <strong>F4E, a custom Discord bot</strong> built for a personal server with friends.  
-                This bot was programmed in <strong>Python</strong>, and version controlled with <strong>Git.</strong>
-                The key purpose of this bot was to respond to user text commands with jokes, riddles, trivia, etc., while also being capable of
-                 <strong>dynamically generating visual content such as custom memes.</strong>
+                Another personal project I enjoyed working on was F4E, a custom Discord bot built for a personal server with friends.  
+                This bot was programmed in Python, and version controlled with Git.
+                The purpose of this bot was to <strong>respond to user text commands with jokes, riddles, trivia, etc., while also being capable of
+                 dynamically generating visual content</strong> such as custom memes.
                 <br><br>
-                To achieve this, I integrated multiple external APIs. 
+                To achieve this, I <strong>integrated multiple external APIs.</strong>
                 One of my favorite commands leveraged the Art Institute of Chicago's API, allowing the bot to implement an "art exhibit of the day."  
-                I also regularly <strong>consulted the official documentation</strong> for the Discord API to handle things such as asynchronous message processing and user permissions correctly.
+                I also regularly <strong>consulted the official documentation</strong> for the Discord API to handle things such as
+                 <strong>asynchronous message processing</strong>and user permissions correctly.
                 <br><br>
                 This project gave me hands-on experience with <strong>real-time API integration and asynchronous programming.</strong>
-                There was also some <strong>text sanitization</strong> required to properly handle some commands, such as custom meme generation.
+                There was also some <strong>text sanitization</strong> required to properly handle some commands, especially with regards to dynamically generated content.
             </p>
             <!--F4E-->
-            <h4 class="main-section-subheader">VICE: A Chess Engine.</h4>
+            <h4 class="section-subheader">VICE: A Chess Engine.</h4>
             <p>
                 My first large-scale personal project was a chess engine made entirely in C. I've been playing chess for a few years, and at the time 
                 I began working on this project, the creation of a chess engine seemed like the perfect blend of interests.
                 <br><br>
-                I followed and implemented the <strong>VICE Chess Engine</strong> project based on Bluefever software’s video series. 
-                Written in <strong>C</strong>, this project introduced me to core concepts common to other board game engines and decision-based systems 
+                I followed and implemented the VICE Chess Engine, which was based on Bluefever software’s video series. 
+                Written in C, this project introduced me to core concepts common to many board game engines and decision-based systems 
                  such as <strong>move generation, minimax search, and alpha-beta pruning</strong>. 
-                I later experimented with <strong>tuning evaluation scores </strong> and implementing an opening book to improve the engine's strength and search performance.
+                I later experimented with <strong>tuning evaluation scores </strong> and <strong>implementing an opening book to improve the engine's strength</strong> and search performance.
                 <br><br>
                 This project <strong>strengthed my understanding of low-level programming</strong>, as I had more practice with concepts such as memory management. 
-                It also gave me more practice with <strong>bit manipulation</strong>, since the use of a bitboard encoded the entire game board onto a single integer.
-                To streamline the build process, I also configured a <strong>Makefile</strong>, enabling consistent compilation.
+                It also gave me <strong>more practice with bit manipulation</strong>, since the use of a bitboard encoded the game state into an integer.
+                To streamline the build process, I also <strong>configured a Makefile</strong>, enabling consistent compilation.
             </p>
 
         </section>

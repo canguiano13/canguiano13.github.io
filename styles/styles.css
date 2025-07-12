@@ -8,6 +8,7 @@
 html, body{
     height: 100%;
     font-family: "DM Sans", sans-serif;
+    font-size: 1.1rem;
 }
 html{
     scroll-behavior: smooth;
@@ -19,6 +20,9 @@ body{
 }
 p{
     color: #121212;
+}
+strong{
+    font-weight: 900;
 }
 
 /* TRANSITION */
@@ -52,14 +56,14 @@ nav{
 }
 .nav-header{
     margin-top: 0.5rem;
-    font-size: 1.75rem;
+    font-size: 1.55rem;
 }
 .nav-subheader{
     font-size: 1.25rem;
 }
 .nav-links-list{
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
 }
 /* LINKS ON NAVBAR */
 .nav-link{
@@ -181,34 +185,49 @@ nav{
 .main-section{
     margin: 40px 0
 }
-.main-section-header{
-    margin: 5;
-    font-size: 1.75rem;
-}
-.main-section-subheader{
-    margin: 5px 0;
-    font-size: 1.25rem;
-    text-align: center;
-    font-weight: bold;
-}
 .main-section p{
     text-indent: 2vw;
     font-weight: 500;
     line-height: 1.75; 
-    margin-bottom: 20px;   
+    margin-bottom: 15px;   
 }
 .main-section ol{
-    margin-bottom: 20px;
-    padding-left: 40px;
+    margin-bottom: 15px;
+    padding-left: 50px;
     font-weight: 500;
     line-height: 1.75;
 }
 .main-section li{
     padding-left: 10px;
 }
-
-/* PROFILE SECTION */
-
+.section-header{
+    display: flex;
+    margin: 5;
+    font-size: 1.66rem;
+}
+.section-subheader{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+#personal-projects-warning{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+.collapsible-button{
+    margin-left: 20px;
+    width: fit-content;
+    font-weight: bolder;
+    font-size: 2rem;
+    border: none;
+}
+.collapsible-button:hover{
+    cursor: pointer;
+    color: rgb(101, 101, 101);
+}
 
 
 /* HAMBURGER ICON */
