@@ -2,12 +2,12 @@
 //collapse/expand section
 function toggleCollapsible(clickedButton, sectionId){
     //update text/title of button
-    if(clickedButton.textContent === "\u2014"){
+    if(clickedButton.textContent === "\u2013"){
         clickedButton.textContent="+";
-        clickedButton.title = "Expand section";
+        clickedButton.title = "See more";
     } else{
-        clickedButton.textContent="\u2014";
-        clickedButton.title = "Collapse section";
+        clickedButton.textContent="\u2013";
+        clickedButton.title = "See less";
     }
 
     //get all children of desired section
