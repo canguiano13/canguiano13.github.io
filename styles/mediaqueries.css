@@ -3,7 +3,7 @@
 }
 
 /* smaller screens */
-@media screen and (max-width: 1000px){
+@media screen and ((max-width: 1000px) or (max-height: 720px)){
     /* wrap main content under nav */
     body{ flex-direction: column; }
     
@@ -17,10 +17,14 @@
     /* make the main content span the full width */
     .main-content{
         margin: 0;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         padding: 2rem;
     }
+
+    /* switch side footer border is on */
+    .nav-footer{ display: none; }
+    .hamburger-footer{ display: block;}
 }
 
 /* smaller tablets */
@@ -32,6 +36,7 @@
     .main-header{
         text-align:center;
     }
+    
 }
 
 /* phone screens */
