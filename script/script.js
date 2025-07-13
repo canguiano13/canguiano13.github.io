@@ -11,8 +11,8 @@ function toggleCollapsible(clickedButton, sectionId){
     }
 
     //get all children of desired section
-    elementsToToggle = document.getElementById(sectionId).querySelectorAll("h4, p, ol");
-    console.log(elementsToToggle);
+    elementsToToggle = document.getElementById(sectionId).querySelectorAll("h3, p, ol");
+
     //hide/show children
     for (let i=0; i<elementsToToggle.length; i++){
         sectionToClose = elementsToToggle[i];
@@ -20,7 +20,11 @@ function toggleCollapsible(clickedButton, sectionId){
     }
 }
 
-
+//toggle styling for page between light mode and dark mode
+//TODO implement
+function toggleDarkMode(){
+    //todo
+}
 //TODO fix implementation
 function toggleMenu(){
     const nav = document.querySelector(".dropdown-nav");
