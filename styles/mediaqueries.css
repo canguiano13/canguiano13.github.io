@@ -1,4 +1,9 @@
-@media screen and (max-width: 900px){
+/* extra large screens */
+@media screen and (min-width: 1960px){
+}
+
+/* smaller screens */
+@media screen and (max-width: 1000px){
     /* wrap main content under nav */
     body{ flex-direction: column; }
     
@@ -7,6 +12,7 @@
 
     /* display the mobile nav */
     .dropdown-nav{ display: flex; }
+
 
     /* make the main content span the full width */
     .main-content{
