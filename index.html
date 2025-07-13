@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <!--DM Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+    <title>C. Anguiano</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
+</head>
+
+<body>
+    <!--navbar for desktop/wide screens-->
+    <nav class="desktop-nav">
+        <!--sidebar header info-->
+        <image class="nav-img" src="./assets/headshot.jpg"></image>
+        <h1 class="nav-header">Carlos Anguiano</h1>
+        <p class="nav-subheader">Computer Scientist.</p>
+        <!--sidebar quick links-->
+        <ul class="nav-links-list">
+            <li>
+                <a class="nav-link" href="https://letmegooglethat.com/?q=Sacramento%2C+CA">
+                    <img class="icon" src="./assets/location-icon.png"/>
+                    Sacramento, CA
+                 </a>
+            </li>
+            <li>
+                <a class="nav-link" href="./assets/diploma.pdf">
+                    <img class="icon" src="./assets/education-icon.png">
+                    B.S., SDSU, Summa Cum Laude
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="mailto:canguiano@ucdavis.edu">
+                    <img class="icon" src="./assets/education-icon.png">
+                    M.S, UCD <p id="in-progress-notice">[IN PROGRESS]</p>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="https://github.com/canguiano13">
+                    <img class="icon" src="./assets/github-icon.png">
+                    GitHub
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="https://linkedin.com/in/canguiano13">
+                    <img class="icon" src="./assets/linkedin-icon.png">
+                    LinkedIn
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="https://canguiano.com">
+                    <img class="icon" src="./assets/code-icon.png">
+                    Personal Website
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!--navbar for smaller screen widths-->
+    <nav class="dropdown-nav">
+        <div class="dropdown-header">
+            <h1>Carlos Anguiano</h1>
+            <p>Computer Scientist.</p>
+        </div>
+        <!--hamburger menu icon with 3 lines, changes when clicked-->
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="dropdown-menu">
+            <!--picture-->
+            <!--quick links-->
+            <ul class="dropdown-menu-links">
+                <li class="dropdown-link">
+                    <a href="https://earth.google.com/web/search/Sacramento,+CA/@38.56175878,-121.46173883,16.09700209a,58189.62546717d,35y,0h,0t,0r/data=Cn0aTxJJCiUweDgwOWFjNjcyYjI4Mzk3Zjk6MHg5MjFmNmFhYTc0MTk3ZmRiGX3ZLE0ASkNAIV79jpekX17AKg5TYWNyYW1lbnRvLCBDQRgCIAEiJgokCUJCluuMoT9AEUJCluuMoT_AGQZRVZfLHExAIRz51lowd0zAQgIIAToDCgEwQgIIAEoNCP___________wEQAA">
+                        <img class="icon" src="./assets/location-icon.png"/>
+                        Sacramento, CA
+                    </a>
+                </li>
+                <li class="dropdown-link">
+                    <a href="./assets/diploma.pdf">
+                        <img class="icon" src="./assets/education-icon.png">
+                        B.S., SDSU, Summa Cum Laude
+                    </a>
+                </li>
+                <li class="dropdown-link">
+                    <a href="mailto:canguiano@ucdavis.edu">
+                        <img class="icon" src="./assets/education-icon.png">
+                        M.S, UCD <p id="in-progress-warning">[IN PROGRESS]</p>
+                    </a>
+                </li>
+                <li class="dropdown-link">
+                    <a href="https://github.com/canguiano13">
+                        <img class="icon" src="./assets/github-icon.png">
+                        GitHub
+                    </a>
+                </li>
+                <li class="dropdown-link">
+                    <a href="https://linkedin.com/in/canguiano13">
+                        <img class="icon" src="./assets/linkedin-icon.png">
+                        LinkedIn
+                    </a>
+                </li>
+                <li class="dropdown-link">
+                    <a href="https://canguiano.com">
+                        <img class="icon" src="./assets/code-icon.png">
+                        Personal Website
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="main-header">
+            <h1>Thanks for checking out my portfolio.</h1>
+            <!--TODO add email submissions via contact form
+            <p>Want to reach out? Use my <a class="main-header-link" href="contact.html">contact form!</a></p>
+            -->
+            <p>Interested in seeing more? Visit my <a class="header-link" href="https://canguiano.com">website.</a></p>
+            <p>TLDR? See <a class="header-link" href="./assets/resume.pdf">resume.</a></p>
+        </div>
+
+        <section id="about-me" class="main-section">
+            <div class="section-header">
+                <h1>About Me</h1>
+                <button title="See less" class="collapsible-button" onclick="toggleCollapsible(this, 'about-me')">&ndash;</button>
+            </div>
+            <h3 class="section-subheader">Education and Interests</h3>
+            <p>
+                My interest in computer science first started in junior high, when I enrolled for a game development class.
+                We started with a brief introduction to C++, but soon switched to using a game engine. 
+                I was fascinated by the power of code and the creativity it enabled, which ultimately inspired me to study CS. 
+                This remains one of my favorite classes of all time.
+                <br><br>
+                From 2021-2025, <strong>I completed my undergraduate degree at San Diego State University.</strong>
+                At SDSU, I studied a wide range of topics, including <strong>Algorithms & Data Structures, Computer Networks, Computer Security,
+                 Cloud Computing, UNIX System Administation, Database Theory and Implementation, Machine Learning, and Data Science</strong>, among others.
+                During my undergraduate program, I placed a strong emphasis on my academic performance. 
+                While consistently working 20 hours a week and leading a student organization at SDSU, I <strong>maintained a 3.93 GPA</strong> in major-related courses.
+                In May of 2025, I obtained my Bachelor's of Science, graduating <strong><i>Summa Cum Laude.</i></strong>
+                I was also identified as one of the <strong>2025 Outstanding Computer Science Undergraduate Student</strong> by the department.
+                <br><br>
+                This fall, I'll begin pursuing my <strong>Master's of Science at UC Davis.</strong>
+                One of the things that I love about computer science its breadth. Computer Science is a diverse field spanning topics, and if I could, I'd study them all.
+                However, <strong> while pursuing my master's, my topics of focus will be Software Engineering, Programming Languages, and Computer Science Education.</strong>
+                
+            </p>
+
+            <h3 class="section-subheader">Skills</h3>
+            <p>
+                I'm most <strong>proficient in Python, Java, and C/C++</strong>, and am experienced with version control using <strong>Git and Github</strong>.
+                I have a good working knowledge of <strong>HTML, CSS, JavaScript, MySQL, and Bash</strong>.
+                I'm also familiar with containerization tools like <strong>Docker</strong>, and am generally quite comfortable in a <strong>UNIX environment.</strong>
+                Moreover, I've worked with <strong>Google Cloud Platform</strong> tools such as Google Cloud Run, IAM, and Cloud SQL.
+            </p>
+        </section>
+
+        <section id="work-experience" class="main-section">
+            <div class="section-header">
+                <h1>Work Experience</h1>
+                <button title="See less" class="collapsible-button" onclick="toggleCollapsible(this, 'work-experience')">&ndash;</button>
+            </div>
+            <h3 class="section-subheader">SAASS Tutoring</h3>
+            <p>
+                At the start of my second year at SDSU, I began working part-time as a tutor for SDSU's Student-Athlete Academic Support Services (SAASS) team.
+                Here, I gained valuable <strong>practice teaching fundamental computer science concepts</strong>, and <strong>identified an interest in computer science education.</strong>
+                As a part of this team, I <strong>scheduled and led one-on-one tutoring sessions, prepared lesson materials in advance, and created relevant visualizations.</strong>
+                This role also helped me to develop my own understanding of fundamental computer science topics, and inspired me to further study computer science education.
+            </p>
+            <h3 class="section-subheader">The IT User Services Help Desk</h3>
+            <p>
+                Also in Fall 2022, I began working as a student analyst for SDSU's IT Division, and was later promoted to a
+                 lead student analyst in the summer of 2024 on account of performance.
+                As a part of IT User Services, I <strong>provided frontline support for the more than 75,000+ active students, staff, and faculty.</strong>
+                Our team supported technical issues related to Google Workspace, Microsoft Office 365,
+                 Duo Mobile, Adobe Sign/Creative Cloud and more through the ServiceNow Platform. 
+                During my time in this role, <strong>I resolved 4,000+ support requests comprising more than 15% of all resquests routed to the IT division.</strong>
+                Beyond just technical support however, this role provided me with <strong>valuable insight into broader IT responsibilities including
+                 infrastructure management, SaaS platform administration and integration, and cross-directory account synchronization.</strong>
+            </p>
+            <h3 class="section-subheader">Research at the AI4Business Lab</h3>
+            <p>
+                In the fall of 2023, I joined a research team at SDSU's AI4Business Lab, where we examined the existing landscape of Large Language Models (LLMs)
+                 and further investigated their capabilities in business-related contexts.
+                My team placed specific focus on document categorization, analyzing how LLMs perform at tasks such as topic extraction and document clustering.
+                As part of my responsibilies, <strong>I collaborated on the development of several Python scripts aimed at solving NLP-related tasks.</strong>
+                These tasks included <strong>tokenization, text sanitization, n-gram frequency analysis.</strong>
+                One of the things that I quite enjoyed about working on these scripts was that it also gave me some <strong>additional practice
+                 with remote development</strong>, as the high computational power required for AI training necessitated the use of
+                a private cloud environment for development and testing.
+            </p>
+        </section>
+        
+        <section id="personal-projects" class="main-section">
+            <div class="section-header">
+                <h1>Personal Projects</h1>
+                <button title="See less" class="collapsible-button" onclick="toggleCollapsible(this, 'personal-projects')">&ndash;</button>
+            </div>
+            <p id="personal-projects-notice">A more complete list of my projects can be found on <a href="https://canguiano.com/projects">my website.</a></p>
+
+            <!--RollCall-->
+            <h3 style="margin-top: 10px;"class="section-subheader">RollCall: A Cloud-based Virtual Guestbook App.</h3>
+            <p>
+                One of my favorite personal projects that I've worked on is RollCall, a full-stack, cloud-based web app 
+                 that allows users to create, manage, and share digital guestbooks for events. 
+                The idea was to allow guests to sign these digital guestbooks, giving hosts the opportunity to build hype before an event 
+                 and preserve a digital momento after it ended.
+                The key features we aimed to implement were: 
+            </p>
+            <ol>
+                <li>Support for CRUD (Create, Read, Update, Delete) operations on digital guestbooks.</li>
+                <li>Implementation of a robust user-authentication mechanism to ensure guestbooks are secure.</li>
+                <li>Message moderation capabilities for guestbook hosts which are not visible to guests.</li>
+            </ol>
+            <p style="text-indent: 0;">
+                I contributed to this project at many stages throughout the project lifecycle from system design to deployment.
+                During the design phase, I <strong>helped draft the user-flow diagram and overall system architecture diagram.</strong>
+                I also <strong>led discussions regarding our tech stack</strong>, which ultimately consisted of 
+                 Python (Flask), HTML/CSS/JavaScript, SQL, Git/GitHub, Docker, Bash, and Google Cloud Run.
+                <br><br>
+                Later, I <strong>implemented the SQL schema, deploying it to a Google Cloud SQL instance</strong>, and configuring access via a service account using Google Cloud IAM. 
+                To support serverless deployment, I <strong>created a Dockerfile for containerization</strong>, and contributed to a
+                 <strong>Bash deployment script</strong> using the Google Cloud CLI to push the container image and launch the service on <strong>Cloud Run</strong>.
+                <br><br>
+                With our database configured, I then developed <strong>Flask-SQLAlchemy ORM models</strong> to simplify database interactions, 
+                 and <strong>contributed to the frontend Jinja2 templates</strong> for dynamic content rendering. 
+                I was also primarily responsible for implementing core features such as <strong>user authentication and message moderation</strong>.
+                <!--could add more here about the presentation?-->
+            </p>
+            
+            <!--F4E-->
+            <h3 class="section-subheader">F4E: A Custom Discord Bot.</h3>
+            <p>
+                Another personal project I enjoyed working on was F4E, a custom Discord bot built for a personal server with friends.  
+                This bot was programmed in Python, and version controlled with Git.
+                The purpose of this bot was to <strong>respond to user text commands with jokes, riddles, trivia, etc., while also being capable of
+                 dynamically generating visual content</strong> such as custom memes.
+                <br><br>
+                To achieve this, I <strong>integrated multiple external APIs.</strong>
+                One of my favorite commands leveraged the Art Institute of Chicago's API, allowing the bot to implement an "art exhibit of the day."  
+                I also regularly <strong>consulted the official documentation</strong> for the Discord API to handle things such as
+                 <strong>asynchronous message processing</strong>and user permissions correctly.
+                <br><br>
+                This project gave me hands-on experience with <strong>real-time API integration and asynchronous programming.</strong>
+                There was also some <strong>text sanitization</strong> required to properly handle some commands, especially with regards to dynamically generated content.
+            </p>
+            <!--VICE-->
+            <h3 class="section-subheader">VICE: A Chess Engine.</h3>
+            <p>
+                My first large-scale personal project was a chess engine made entirely in C. I've been playing chess for a few years, and at the time 
+                I began working on this project, the creation of a chess engine seemed like the perfect blend of interests.
+                <br><br>
+                I followed and implemented the VICE Chess Engine, which was based on Bluefever software’s video series. 
+                Written in C, this project introduced me to core concepts common to many board game engines and decision-based systems 
+                 such as <strong>move generation, minimax search, and alpha-beta pruning</strong>. 
+                I later experimented with <strong>tuning evaluation scores </strong> and <strong>implementing an opening book to improve the engine's strength</strong> and search performance.
+                <br><br>
+                This project <strong>strengthed my understanding of low-level programming</strong>, as I had more practice with concepts such as memory management. 
+                It also gave me <strong>more practice with bit manipulation</strong>, since the use of a bitboard encoded the game state into an integer.
+                To streamline the build process, I also <strong>configured a Makefile</strong>, enabling easier recompilation.
+            </p>
+        </main>
+    </div>
+    <footer>&copy; 2025 Carlos Anguiano</footer>
+    <!--render js-->
+    <script src="script/script.js"></script>
+</body>
+
+</body>
+</html>
