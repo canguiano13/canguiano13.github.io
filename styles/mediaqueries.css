@@ -1,20 +1,46 @@
 /* extra large screens */
-@media screen and (min-width: 1960px){
+@media screen and ((min-width: 1921px) or (min-height: 1081px)){
+    html {font-size: 24px;}
+
+    /* allow the navbar image to grow more */
+    .desktop-nav{ min-width: max(550px, 25vw); }
+    .nav-img{ max-width: 450px; }
+    .nav-footer { width: max(550px, 25vw); }
+    main{ margin-left: max(550px, 25vw); }
+
+    /* space elements out more */
+    .nav-link { margin: 1.2rem; }
+    #in-progress-notice { margin: auto 10px; }
 }
 
-/* smaller screens */
-@media screen and ((max-width: 1000px) or (max-height: 720px)){
-    /* wrap main content under nav */
+/* large screens 
+@media screen and ((min-width: 1440px) and (min-height: 900px)){
+    html {font-size: 24px;}
+
+    .desktop-nav{ min-width: max(550px, 25vw); }
+    .nav-img{ max-width: 450px; }
+    .nav-footer { width: max(550px, 25vw); }
+    main{ margin-left: max(550px, 25vw); }
+
+    .nav-link { margin: 1.2rem; }
+    #in-progress-notice { margin: auto 10px; }
+}
+*/
+
+/* regular screens supports ranges 1024x728px*/
+
+/* smaller screens
+@media screen and ((max-width: 1023)){
+
+    html { font-size: 16px;}
+
     body{ flex-direction: column; }
     
-    /* remove the desktop nav */
     .desktop-nav{ display: none; }
 
-    /* display the mobile nav */
     .dropdown-nav{ display: flex; }
 
 
-    /* make the main content span the full width */
     .main-content{
         margin: 0;
         width: 100vw;
@@ -22,25 +48,26 @@
         padding: 2rem;
     }
 
-    /* switch side footer border is on */
     .nav-footer{ display: none; }
     .hamburger-footer{ display: block;}
 }
+*/
 
-/* smaller tablets */
-@media screen and (max-width: 640px){
-    /* reduce font sizes for some headers */
+/* tablets 
+@media screen and ((max-height: 820px) and (max-width: 1180px)){
+    html { font-size: 14px; }
     .dropdown-header-container{
         font-size: 1.25rem;
     }
     .main-header{
-        text-align:center;
     }
     
 }
+*/
 
 /* phone screens */
-@media screen and (max-width: 400px){
+@media screen and ((max-height: 413px) and (max-width: 916px)){
+    html { font-size: 4px; }
     /* reduce the size of the header */
     .dropdown-header-container{
         width: fit-content;

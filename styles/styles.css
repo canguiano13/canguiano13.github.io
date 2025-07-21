@@ -3,21 +3,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /*TODO pick one of these for the background */
-    background-color: #FAFAFA;
-
     background-color: #FEFEFE;
 }
 html, body{
-    height: 100%;
     font-family: "DM Sans", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1em;
 }
 html{
+    /*TODO save state of page when scrolling in case page gets refreshed */
     scroll-behavior: smooth;
 }
 body{
     display: flex;
+    /* want two-column design */
     flex-direction: row;
     overflow: hidden;
     color: #121212;
@@ -36,7 +34,7 @@ a:hover{
 }
 
 /* DESKTOP NAVBAR */
-/* used on M/L/XL screens */
+/* used on R/L/XL screens */
 nav{
     display: flex;
     align-items: center;
@@ -44,21 +42,21 @@ nav{
 .desktop-nav{
     position: fixed;
     flex-direction: column;
-    overflow-y: scroll;
     border-right: 2px solid rgb(101, 101, 101, 0.33);
-    width: 25vw;
-    min-width: 350px;
+    width: max(25vw, 256px);
+    padding: 20px;
     height: 100vh;
-    padding: 1rem; 
 }
 .nav-img{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border: 5px solid #1F1F1F;
+    margin: 2vh 0;
+    border: 3px solid #1F1F1F;
     border-radius: 25px;
     width: 100%;
-    max-width: 350px;
+    max-width: calc(1.25 * 256px);
     height: auto;
+}
+.nav-header {
+    font-size: 1.5rem;
 }
 .nav-subheader{
     font-size: 1.25rem;
@@ -69,8 +67,9 @@ nav{
     transition: 0.1s ease-in-out;
 }
 .nav-links-list{
+    margin-top: 8px;
     list-style: none;
-    font-size: 1.33rem;
+    font-size: 1.25rem;
 }
 .nav-footer{
     position: fixed;
@@ -78,16 +77,18 @@ nav{
     left: 0;
     right: 0;
     border-right: 2px solid rgb(101, 101, 101, 0.33);
-    height: 2vh;
-    width: max(350px, 25vw);
+    height: 1rem;
+    width: max(256px, 25vw);
+    padding: 20px;
     font-size: 0.75rem;
     background-color: #FEFEFE;
 }
+
 /* LINKS ON NAVBAR */
 .nav-link{
     /* use flexbox to put icon inline with anchor */
     display: flex;
-    margin: 1rem 0;
+    margin: 2vh 0;
     text-decoration: none;
     color: #121212;
 }
@@ -97,14 +98,15 @@ nav{
     transform: scale(1.05);
 }
 .icon{
+    margin: auto 0;
     margin-right: .75rem;
     height: 1.5rem;
 }
 #in-progress-notice{
-    margin: 0.3rem;
+    margin: auto 5px;
     align-self: end;
     color: black;
-    font-size: .8rem;
+    font-size: .725rem;
     font-weight: 600;
 }
 
@@ -123,13 +125,13 @@ nav{
    overflow: hidden;
 }
 .dropdown-header{
-    margin-left: 2rem;
+    margin-left: 32px;
     padding: 2rem;
     white-space: nowrap;
     font-size: 1.5rem;
 }
 .dropdown-header p{
-    margin-left: 1.5rem;
+    margin-left: 32px
 }
 .dropdown-menu-links{
     display: flex;
@@ -162,24 +164,28 @@ nav{
     text-align: center;
     font-size: .75rem;
 }
+
 /* MAIN CONTENT */
 main{
     position: fixed;
-    margin-left: max(350px, 25vw);
+    margin-left: max(256px, 25vw);
     height: 100vh;
-    padding: 3rem 4rem;
+    width: 75vw;
+    padding: 42px;
     overflow-y: scroll;
 }
 .main-header{
-    margin-bottom: 40px;
+    text-align: left;
+    width: 75vw;
 }
 .main-header h1{
     margin-bottom: 5px;
+    font-size: 2rem;
 }
 .main-header p{
-    margin-bottom: 2px;
     margin-left: 2vw;
     font-weight: 600;
+    font-size: 1.125rem;
 }
 .header-link, .header-link:visited{
     /*need the inline-block to apply transformation on hover*/
@@ -194,15 +200,23 @@ main{
 .section-header{
     /* headers also have expand/collapse buttons inline */
     display: flex;
-    font-size: 1.5rem;
+    margin-bottom: 10px;
+    width: 75vw;
+    min-width: calc(100vw - 256px);
+    font-size: 1.33rem;
+
+}
+.section-header:first-of-type{
+    margin-top: -15px; /* TODO fix this kludge */
 }
 .section-subheader{
     margin-top: 30px;
     margin-bottom: 15px;
     text-align: center;
+    font-size: 1.33rem;
 }
 .section-subheader:first-of-type{
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .main-section{
     margin: 40px 0;
@@ -222,12 +236,13 @@ main{
     padding-left: 5px;
 }
 .collapsible-button{
-    margin: auto 20px;
+    margin: auto 10px;
     width: fit-content;
     height: fit-content;
     border: none;
+    color: #121212;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .collapsible-button:hover{
     cursor: pointer;
@@ -236,11 +251,11 @@ main{
     transition: 0.50ms ease-in-out;
 }
 #personal-projects-notice{
+    margin-bottom: 10px;
     display: inline-block;
 }
 #personal-projects-notice a:hover{
     color: #700070;
-    transform: scale(1.1);
 }
 
 
