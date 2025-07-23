@@ -12,13 +12,10 @@
 
     /* add more padding to the main content */
     main{ padding: 48px 84px;}
-
-    /* space elements out more */
-    
 }
 
 /* large screens */
-@media screen and (1440px <= width <= 1920px) and (height > 750px) {
+@media screen and (1366px <= width <= 1920px) and (height > 750px) {
     /* increase font size */
     html {font-size: 1.2em;}
 
@@ -27,38 +24,76 @@
 
     /* add more padding for the main content */
     main{ padding: 42px 64px;}
-
 }
 
-/* tablets */
-@media screen and ((width <= 1024px) or (height < 625px)) {
-    /* reduce font size */
-    html { font-size: 16px;}
+/* smaller screens */
+@media screen and ((width < 1024px) or (height < 625px)) {
+    /* update font size */
+    html { font-size: 1em;}
+    .dropdown-header{ font-size: 1.75rem; }
 
-    /* center main and section headers */
-    .main-header{ margin: auto; } 
+    /* left-align text */
+    .main-header{ margin: 0; } 
+    .section-header { margin: 0; }
 
     /* switch from nav bar to dropdown nav */
     body{ flex-direction: column; }
     .desktop-nav{ display: none; }
     .dropdown-nav{ display: flex; }
+    .dropdown-img {display: block;}
+
+    /* make main content a single column */
     .main-content{
         margin: 0;
+        margin-top: max(12vh, 120px);
         width: 100vw;
-        height: 100vh;
-        padding: 2rem;
+        padding: 1vh 4vw;
     }
 
-    /* move footer to center of screen */
+    /* add fixed footer in center of screen under main content */
     .nav-footer{ display: none; }
-    .hamburger-footer{ display: block;}
-
+    .hamburger-footer{ 
+        display: block;
+        height: 1.5vh;
+    }
 }
 
 /* phone screens */
-@media screen and ((max-width: 450px) and (max-height: 916px)){
-    /* reduce font size */
-    html { font-size: .5em; }
+@media screen and (width < 750px) {
+    /* update font size */
+    html { font-size: .85em;}
 
-
+    /* reduce size of nav bar elements */
+    .dropdown-nav{
+        height: 6vh;
+        min-height: 80px;
+    }
+    .dropdown-img{
+        border: 1px solid #1F1F1F;
+        height: 7vh;
+        width: auto;
+    }
+    .hamburger-icon {
+        width: 42px; 
+        height: 42px;
+    }
+    /* reduce main content spacing */
+    .main-content{
+        margin: 0;
+        margin-top: max(6vh, 40px);
+        width: 100vw;
+        padding: 2vh 3vw;
+    }
 }
+
+/*
+@media screen and (width < 625px) {
+    html { font-size: .65em;}
+}
+*/
+/*
+@media screen and (width < 500px){
+    /\* reduce font size *\/
+    html { font-size: .5em; }
+}
+/*

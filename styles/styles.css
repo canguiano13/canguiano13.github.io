@@ -114,26 +114,42 @@ nav{
 /*DROPDOWN NAVBAR*/
 /* used for XS/S screens */
 .dropdown-nav{
-   display: none;
-   margin-top: 1rem;
-   justify-content: space-between;
-   border-bottom: 1px solid rgb(101, 101, 101, 0.25);
-   padding: 2rem 2rem 3rem 2rem;
-   width: 100vw;
-   height: 12vh;
-   min-height: 80px;
-   overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh; /* always put some space at the top of the page */
+    border-bottom: 2px solid rgb(101, 101, 101, 0.33);
+    width: 100%;
+    height: 6vh;
+    min-height: 100px;
+    padding: 30px 40px;
+    overflow: hidden;
+}
+.dropdown-img{
+    display: none;
+    position: fixed;
+    border: 2px solid #1F1F1F;
+    border-radius: 20px;
+    height: 84px;
+    width: auto;
 }
 .dropdown-header{
-    margin-left: 32px;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
     white-space: nowrap;
     font-size: 1.5rem;
 }
-.dropdown-header p{
-    margin-left: 32px
+.dropdown-header h1:hover, .dropdown-header p:hover{
+    transform: scale(103%);
+    transition: 0.1s ease-in-out
 }
+/* menu once hamburger icon is clicked */
 .dropdown-menu-links{
+    padding-left: 100px;
+    flex-grow: 3;
+    align-self: right;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -264,15 +280,14 @@ main{
 /* HAMBURGER ICON */
 .hamburger-icon{
     display: flex;
-    margin-left: 33vw;
-    justify-self: center;
-    align-self: center;
-    justify-content: space-between;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 0;
-    width: 32px; 
-    height: 24px;
+    position: fixed;
+    right: 0;
+    margin: auto;
+    margin-right: 4vw;
+    border: 4px solid rgb(101, 101, 101, 0.5);
+    background-color: rgb(101, 101, 101, 0.5);
+    width: 64px; 
+    height: 64px;
 }
 .hamburger-icon span{
     background-color: black;
@@ -298,3 +313,4 @@ main{
 .hamburger-icon span:last-child{
     transform: none;
 }
+
