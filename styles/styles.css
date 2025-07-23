@@ -286,8 +286,8 @@ main{
     margin-right: 4vw;
     border: 4px solid rgb(101, 101, 101, 0.5);
     background-color: rgb(101, 101, 101, 0.5);
-    width: 64px; 
-    height: 64px;
+    width: 48px; 
+    height: 48px;
 }
 .hamburger-icon span{
     background-color: black;

@@ -33,7 +33,7 @@
     .dropdown-header{ font-size: 1.75rem; }
 
     /* left-align text */
-    .main-header{ margin: 0; } 
+    .main-header{ margin: 0; width: 100%; } 
     .section-header { margin: 0; }
 
     /* switch from nav bar to dropdown nav */
@@ -47,6 +47,7 @@
         margin: 0;
         margin-top: max(12vh, 120px);
         width: 100vw;
+        height: max(86vh, 100vh - 120px);
         padding: 1vh 4vw;
     }
 
@@ -65,12 +66,13 @@
 
     /* reduce size of nav bar elements */
     .dropdown-nav{
-        height: 6vh;
-        min-height: 80px;
+        height: 8vh;
+        min-height: 100px;
+        padding: 1vh 3vw;
     }
     .dropdown-img{
-        border: 1px solid #1F1F1F;
-        height: 7vh;
+        border: 2px solid #1F1F1F;
+        height: 80px;
         width: auto;
     }
     .hamburger-icon {
@@ -79,21 +81,87 @@
     }
     /* reduce main content spacing */
     .main-content{
-        margin: 0;
-        margin-top: max(6vh, 40px);
-        width: 100vw;
+        margin-top: max(8vh, 110px);
+        padding: 1vh 3vw;
+    }
+
+    /* center main content */
+}
+
+@media screen and (width < 650px) {
+    /* update font size */
+    html { font-size: .725em;}
+
+    /* reduce size of nav bar elements */
+    .dropdown-nav{
+        height: 6vh;
+        min-height: 80px;
+    }
+    .dropdown-img{
+        border: 2px solid #1F1F1F;
+        height: 70px;
+        width: auto;
+    }
+    .hamburger-icon {
+        width: 36px; 
+        height: 36px;
+    }
+    /* reduce main content spacing */
+    .main-content{
+        margin-top: max(6vh, 90px);
+        padding: 1vh 3vw;
+    }
+}
+@media screen and (width < 550px){
+    /* update font size */
+    html { font-size: .725em;}
+    /* reduce size of nav bar elements */
+    .dropdown-nav{
+        height: 4vh;
+        min-height: 70px;
+    }
+    .dropdown-img{
+        border: 1px solid #1F1F1F;
+        border-radius: 10px;
+        
+        height: 60px;
+        width: auto;
+    }
+    .hamburger-icon {
+        width: 32px; 
+        height: 32px;
+    }
+    /* reduce main content spacing */
+    .main-content{
+        margin-top: max(4vh, 80px);
         padding: 2vh 3vw;
     }
 }
 
-/*
-@media screen and (width < 625px) {
-    html { font-size: .65em;}
+@media screen and (width < 425px){
+    /* update font size */
+    html { font-size: .6em;}
+    /* reduce size of nav bar elements */
+    .dropdown-nav{
+        height: 3vh;
+        min-height: 60px;
+    }
+    .dropdown-img{
+        border: 1px solid #1F1F1F;
+        border-radius: 10px;
+        height: 50px;
+        width: auto;
+    }
+    .dropdown-header{
+        font-size: 1.25rem;
+    }
+    .hamburger-icon {
+        width: 32px; 
+        height: 32px;
+    }
+    /* reduce main content spacing */
+    .main-content{
+        margin-top: max(3vh, 70px);
+        padding: 2vh 3vw;
+    }
 }
-*/
-/*
-@media screen and (width < 500px){
-    /\* reduce font size *\/
-    html { font-size: .5em; }
-}
-/*
